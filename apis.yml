@@ -1,23 +1,66 @@
 aid: berlin-brands-group
+
 name: Berlin Brands Group
-description: 'Berlin Brands Group is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Berlin Brands Group (BBG) is a Berlin‑based holding company that creates, builds, buys and scales consumer brands globally. Founded in 2005, it operates multiple e‑commerce brands across home appliances, audio, lighting and lifestyle, employing thousands and serving European markets.'
+
 url: https://raw.githubusercontent.com/api-evangelist/berlin-brands-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- E-commerce
+- Consumer Goods
+- Berlin
+- Holding
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/berlin-brands-group-hosts.yml
+- type: DomainSecurity
+  url: security/berlin-brands-group-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/berlin-brands-group_stock/
+  url: https://www.berlinbrands.de/en/
+- type: AboutUs
+  url: https://www.berlinbrands.de/en/about-us
+- type: Contact
+  url: https://www.berlinbrands.de/en/about-us/contact
+- type: Imprint
+  url: https://www.berlinbrands.de/en/about-us/impressum
+- type: PrivacyPolicy
+  url: https://www.berlinbrands.de/en/about-us/datenschutz
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The website https://www.berlinbrands.de/en/ returns a JavaScript shell with no machine‑readable API documentation.
+  evidence:
+    - url: https://www.berlinbrands.de/en/
+      status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
