@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/berlin-brands-group/integrations
+- https://n8n.io/integrations/berlin-brands-group/
+- https://composio.dev/toolkits/berlin-brands-group
+- https://monid.ai/tools/berlin-brands-group
+checked:
+- https://composio.dev/toolkits/berlin-brands-group
+- https://monid.ai/tools/berlin-brands-group
+- https://n8n.io/integrations/berlin-brands-group/
+- https://zapier.com/apps/berlin-brands-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
